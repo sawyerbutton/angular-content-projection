@@ -141,7 +141,7 @@ import { Component } from '@angular/core';
   template: `
    <div class="app">
      <app-my-component>
-       This is my transcluded content!
+       投影内容
      </app-my-component>
    </div>
   `
@@ -155,7 +155,7 @@ export class AppComponent {}
 <div _ngcontent-c0="" class="app">
   <app-my-component _ngcontent-c0="" _nghost-c1="">
     <div _ngcontent-c1="" class="my-component">
-     This is my transcluded content! 
+      投影内容
      </div>
   </app-my-component>
 </div>
@@ -174,10 +174,10 @@ import { Component } from '@angular/core';
     <div class="app">
       <app-my-component>
         <my-component-title>
-          This is the Component title!
+          组件标题
         </my-component-title>
         <my-component-content>
-          And here's some awesome content.
+          组件内容
         </my-component-content>
       </app-my-component>
     </div>
@@ -210,7 +210,7 @@ import { Component } from '@angular/core';
 ```
 
 > 事实上，在声明要投影的内容时不必像上述那样使用自定义元素
-> 可以使用常规元素并以`document.querySelector`的对话方式来定位投影元素
+> 可以使用常规元素并以类似于`document.querySelector`的对话方式来定位投影元素
 
 ```typescript
 // app.component.ts
@@ -221,10 +221,10 @@ import { Component } from '@angular/core';
    <div class="app">
      <app-my-component2>
        <div class="my-component-title">
-         This is the Component title!
+         组件标题
        </div>
        <div class="my-component-content">
-         And here's some awesome content.
+         组件内容
        </div>
      </app-my-component2>
    </div>
@@ -261,13 +261,13 @@ import { Component } from '@angular/core';
       <div _ngcontent-c2=""> 
         Title: 
           <div _ngcontent-c0="" class="my-component-title"> 
-             This is the Component title! 
+             组件标题 
           </div>
        </div>
        <div _ngcontent-c2=""> 
          Content: 
            <div _ngcontent-c0="" class="my-component-content">
-              And here's some awesome content. 
+              组件内容 
            </div>
        </div>
     </div>
